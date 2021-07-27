@@ -14,16 +14,16 @@ function Curso(nome, notaAprovacao, faltasMaxima ,listaEstudantes) {
     let media = aluno.media();
 
     if(media >= this.notaAprovacao && aluno.faltas < this.faltasMaxima){
-      return 'Parabens você passou 👏👏👏✍';
+      return 'Parabens você passou';
     } else if(aluno.faltas == this.faltasMaxima){
       let mediaDezPorcento = (media * 0.10) + media;
       if(mediaDezPorcento >= this.notaAprovacao){
-        return 'Parabens você passou 👏👏👏✍';
+        return 'Parabens você passou';
       } else {
-        return 'Infelizmente você foi reprovado(a) 😪';
+        return 'Infelizmente você foi reprovado(a)';
       }
     } else {
-      return 'Infelizmente você foi reprovado(a) 😪';
+      return 'Infelizmente você foi reprovado(a)';
     }
   },
   this.alunosAprovadosReprovados = () => {
